@@ -1,0 +1,3 @@
+sudo iptables -A FORWARD -o [PRIVATE] -j ACCEPT
+sudo iptables -A FORWARD -o [PUBLIC] -j ACCEPT
+sudo iptables -t nat -A POSTROUTING [PUBLIC] -j MASQUERADE
